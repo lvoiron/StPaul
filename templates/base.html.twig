@@ -2,11 +2,30 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
+        <title>{% block title %}SAINT PAUL DU TERRAY{% endblock %}</title>
+        <link rel="stylesheet"  href="css/styly.css"/>
         {% block stylesheets %}{% endblock %}
     </head>
-    <body>
-        {% block body %}{% endblock %}
+    <body class="body">
+        <main class="main">
+            <header class="header">
+                    <h1>SAINT PAUL DU TERRAY</h1>
+                    <menu-null class="menu-null">
+                        <div class="menu">
+                            <a href="#" class="menu_link">Index</a>
+                            <a href="#" class="menu_link">Manifestation</a>
+                            <a href="#" class="menu_link">Facturation</a>
+                            <a href="#" class="menu_link">Contact</a>
+                        </div>
+                    </menu-null>
+                </header>
+        {% block body %}
+            
+            {% endblock %}
+        </main>
+            <footer class="footer">
+                    Copyright &copy; 2019 Saint Paul du Terray
+            </footer>
         {% block javascripts %}{% endblock %}
     </body>
 </html>
